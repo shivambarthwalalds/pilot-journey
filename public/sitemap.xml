@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<!-- ✅ PilotsPathway SEO Sitemap – Generated 2025-08-01 -->
+
+<!-- Main Pages -->
+<url>
+  <loc>https://www.pilotspathway.in</loc>
+  <lastmod>2025-05-12</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.pilotspathway.in/about-us</loc>
+  <lastmod>2025-05-12</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.pilotspathway.in/courses</loc>
+  <lastmod>2025-05-12</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.85</priority>
+</url>
+<url>
+  <loc>https://www.pilotspathway.in/blogs</loc>
+  <lastmod>2025-05-12</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.85</priority>
+</url>
+<url>
+  <loc>https://www.pilotspathway.in/contact-us</loc>
+  <lastmod>2025-05-12</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.60</priority>
+</url>
+
+<!-- Course Pages -->
+<url>
+  <loc>https://www.pilotspathway.in/courses/ppl</loc>
+  <lastmod>2025-05-12</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.pilotspathway.in/courses/cpl-ground-training</loc>
+  <lastmod>2025-05-12</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.pilotspathway.in/courses/cpl-flight-training</loc>
+  <lastmod>2025-05-12</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.pilotspathway.in/courses/flight-simulator</loc>
+  <lastmod>2025-05-12</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.pilotspathway.in/courses/airline-preparation</loc>
+  <lastmod>2025-05-12</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.pilotspathway.in/courses/cadet-course</loc>
+  <lastmod>2025-05-12</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.pilotspathway.in/courses/foundation-course</loc>
+  <lastmod>2025-05-12</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<!-- Blog Articles -->
+<url>
+  <loc>https://www.pilotspathway.in/blogs/why-simulator-training-in-advance-a-game-changer-for-future-pilots</loc>
+  <lastmod>2025-05-12</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.pilotspathway.in/blogs/top-10-myths-about-becoming-a-pilot-and-the-truth-behind-them</loc>
+  <lastmod>2025-05-12</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.pilotspathway.in/blogs/how-to-choose-the-right-flight-school-7-key-questions-to-ask</loc>
+  <lastmod>2025-05-12</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.pilotspathway.in/blogs/career-paths-after-getting-your-cpl</loc>
+  <lastmod>2025-05-12</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.pilotspathway.in/blogs/why-do-pilots-get-paid-so-much</loc>
+  <lastmod>2025-05-12</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+
+</urlset>

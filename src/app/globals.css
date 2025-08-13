@@ -1,26 +1,300 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  /* background-color: #fffbf68a; */
+  max-width: 2200px;
+  padding: 0px;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-librebaskerville: "Libre Baskerville", serif;
+  --animate-movenav: movenav 1s ease-in-out forwards;
 }
+@keyframes movenav {
+  0% {
+    transform: translateY(-100%);
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  100% {
+    transform: translateY(0px);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@theme {
+  --color-lightBrown: #ab750e;
+  --color-customWhite: #fffaf0;
+  --color-darkBlue: #1e233a;
+  --color-dimWhite: #fdf8f3;
+  --color-grayish: #19232d;
+  --animate-movenav: movenav 1s ease-in-out forwards;
+  --breakpoint-5xl: 80rem;
+}
+
+.bg-map {
+  background-image: url("/map.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-cabin-crew {
+  background-image: url("/cabin_crew.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.bg-choose_us {
+  background-image: url("/Home/Choose Us/main.jpg");
+}
+
+.bg_wave {
+  background-image: url("/Background/bg_wave.png");
+}
+
+.bg-mission {
+  background-image: url("/Home/Vision/chooseusbg.png");
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.bg-waves {
+  background-image: url("/Background/angular_waves.png");
+}
+
+.bg-white-jet {
+  background-image: url("/Background/white-jet.png");
+  background-size: cover;
+  background-position: 20% center;
+}
+.bg-airline-prep {
+  background-image: url("/Home/fromclassroom/Airline-Preparation.png");
+  background-size: cover;
+  background-position: center;
+}
+.bg-type-rating {
+  background-image: url("/Home/fromclassroom/type-Rating.png");
+  background-size: cover;
+  background-position: center;
+}
+.bg-fligth-training {
+  background-image: url("/Home/fromclassroom/flight-Training.png");
+  background-size: cover;
+  background-position: center;
+}
+.bg-ground-classes {
+  background-image: url("/Home/fromclassroom/Ground-classes.png");
+  background-size: cover;
+  background-position: center;
+}
+.pulse {
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(198, 156, 109, 1);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* ---------scrollbar */
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #c28d28;
+  border-radius: 100vh;
+  border: 3px solid #c28d28;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #c28d28;
+}
+/* --------- */
+
+.shadow-full {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* button-loader */
+
+.brown-loader {
+  width: 20px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 3px solid #0000; /* Reduced the border thickness to 4px */
+  border-right-color: #ab750e;
+  position: relative;
+  animation: l24 1s infinite linear;
+}
+
+.brown-loader:before,
+.brown-loader:after {
+  content: "";
+  position: absolute;
+  inset: -3px; /* Adjusted to match the new border thickness */
+  border-radius: 50%;
+  border: inherit;
+  animation: inherit;
+  animation-duration: 2s;
+}
+
+.brown-loader:after {
+  animation-duration: 4s;
+}
+
+.white-loader {
+  width: 20px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 3px solid #0000; /* Reduced the border thickness to 4px */
+  border-right-color: #ffffff;
+  position: relative;
+  animation: l24 1s infinite linear;
+}
+
+.white-loader:before,
+.white-loader:after {
+  content: "";
+  position: absolute;
+  inset: -3px; /* Adjusted to match the new border thickness */
+  border-radius: 50%;
+  border: inherit;
+  animation: inherit;
+  animation-duration: 2s;
+}
+
+.white-loader:after {
+  animation-duration: 4s;
+}
+
+.loader {
+  width: 20px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 3px solid #0000;
+
+  border-right-color: #ffffff;
+  position: relative;
+  animation: l24 1s infinite linear;
+}
+
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  inset: -3px; /* Adjusted to match the new border thickness */
+  border-radius: 50%;
+  border: inherit;
+  animation: inherit;
+  animation-duration: 2s;
+}
+
+.loader:after {
+  animation-duration: 4s;
+}
+
+@keyframes l24 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+/* ----------- */
+
+/* @media (min-width: 1280px) and (max-width: 1400px) {
+  .text2w {
+    color: red;
+  }
+} */
+@layer utilities {
+  .animate-bounce-once {
+    animation: bounce-once 1s ease-in-out 5;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes bounce-once {
+    0%,
+    100% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(-25%);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+}
+@layer base {
+  .prose h1 {
+    @apply text-2xl font-semibold mb-4 text-gray-900;
+  }
+
+  .prose h2 {
+    @apply text-2xl font-semibold mb-4 text-black;
+  }
+
+  .prose h3 {
+    @apply text-2xl font-medium mb-4  text-black;
+  }
+
+  .prose h4,
+  .h4-fs {
+    @apply text-2xl font-medium mb-1  text-black;
+  }
+
+  .h5-fs {
+    @apply text-xl font-semibold text-black;
+  }
+
+  .prose p {
+    @apply text-lg leading-relaxed text-gray-700 mb-4;
+  }
+
+  .prose a {
+    @apply text-blue-600 underline hover:text-blue-800;
+  }
+
+  .prose strong {
+    @apply font-semibold;
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
 }
