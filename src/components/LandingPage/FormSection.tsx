@@ -1,9 +1,11 @@
 "use client";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import ContactModal from "../Common/ContactModal";
+import { useState } from "react";
 
 export default function FormSection() {
-
+    const [popup, setPopup] = useState<any>(null);
     const validationSchema = Yup.object({
         fullName: Yup.string().required("Full Name is required"),
         email: Yup.string().email("Invalid email format").required("Email is required"),
@@ -28,10 +30,44 @@ export default function FormSection() {
     };
 
 
-    const handleSubmit = (values: typeof initialValues, { resetForm }: any) => {
-        console.log("Form data:", values);
-        resetForm();
-        alert("Form submitted successfully!");
+    const handleSubmit = (values: typeof initialValues, { resetForm, setSubmitting }: any) => {
+        const postJSON = (url: string, payload: any) =>
+            fetch(url, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload),
+            }).then(async (response) => {
+                if (!response.ok) {
+                    const errorText = await response.text();
+                    throw new Error(errorText || response.statusText);
+                }
+                return response.json();
+            });
+
+        postJSON("/api/create-lead", {
+            name: values.fullName,
+            email_from: values.email,
+            phone: values.mobile,
+            city: values.city,
+            age: values.age,
+        })
+            .then((result) => {
+                setPopup({
+                    type: "success",
+                    message: "Submission Successful",
+                    description: result.message || "Thank you for your submission.",
+                });
+                resetForm();
+                setSubmitting(false);
+            })
+            .catch((error) => {
+                setPopup({
+                    type: "error",
+                    message: "Submission Failed",
+                    description: error.message || "Something went wrong.",
+                });
+                setSubmitting(false);
+            });
     };
 
     return (
@@ -39,7 +75,7 @@ export default function FormSection() {
 
             <div className="relative w-full mx-auto ">
                 {/*  Premium glass-morphism card design */}
-                <div className="bg-white/80 border border-black/20 shadow-2xl md:rounded-2xl px-4 py-8 md:py-4">
+                <div className="bg-white/80 border border-black/20 shadow-2xl rounded-2xl px-4 py-8 md:py-4">
                     {/*  Enhanced typography with gradient text */}
                     <h2 className="text-xl lg:text-2xl font-semibold text-center mb-2 bg-gradient-to-r from-black via-amber-800 to-amber-500 bg-clip-text text-transparent">
                         Start Your Pilot Journey Today!
@@ -139,6 +175,7 @@ export default function FormSection() {
                     </Formik>
                 </div>
             </div>
+            {popup && <ContactModal {...popup} onClose={() => setPopup(null)} />}
         </section>
     );
 }

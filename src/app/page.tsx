@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       <BannerImage />
-      <div className="block md:hidden">
+      {/* <div className="block md:hidden">
         <FormSection />
-      </div>
+      </div> */}
       <Gallery />
       <EnhancedUSPS />
       <HomeCourse />

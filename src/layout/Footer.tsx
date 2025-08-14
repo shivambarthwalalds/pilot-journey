@@ -67,7 +67,7 @@ export default function Footer() {
   }, []);
 
   const aboutLinks = [
-    { label: "Home", src: "/" },
+    { label: "Home", src: "https://www.pilotspathway.in/" },
     // { label: "About Us", src: "/" },
     // { label: "Courses", src: "/" },
     // { label: "Contact Us", src: "/" },

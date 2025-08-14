@@ -49,7 +49,7 @@ const Gallery = () => {
         "1-on-1 Pilot Mentorship",
     ];
     return (
-        <div className="py-10 md:py-16 lg:py-18 px-5 md:px-10 xl:px-32  mx-auto">
+        <div className="py-10 md:py-16 lg:py-18 px-5 md:px-10 xl:px-32  mx-auto ">
             <div className="text-center max-w-3xl mx-auto  ">
                 <ScrollAnimationYAxis>
                     <p className="space-x-2 ">
