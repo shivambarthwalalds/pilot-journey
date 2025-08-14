@@ -8,6 +8,7 @@ export class AppAssets {
   // home ---------------------------------------------------------------
 
   static banner = "/Home/BannerVideo.mp4";
+  static mainBanner = "/LandingBanner.jpg";
   static Intro = "/Home/Intro.mp4";
   static Introimage = "/Home/introimage.png";
   static bannerimg = "/Home/banner.jpg";

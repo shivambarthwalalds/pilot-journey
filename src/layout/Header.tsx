@@ -25,11 +25,11 @@ function Header() {
 
   const menuItems = [
     { label: "Home", url: "/" },
-    { label: "About Us", url: "/about-us" },
-    { label: "Courses", url: "/courses" },
-    { label: "How to become a pilot", url: "/how-to-become-a-pilot" },
-    { label: "Blogs", url: "/blogs" },
-    { label: "Contact Us", url: "/contact-us" },
+    // { label: "About Us", url: "/about-us" },
+    // { label: "Courses", url: "/courses" },
+    // { label: "How to become a pilot", url: "/how-to-become-a-pilot" },
+    // { label: "Blogs", url: "/blogs" },
+    // { label: "Contact Us", url: "/contact-us" },
   ];
 
   return (
@@ -38,7 +38,7 @@ function Header() {
         id="header"
         className={`hidden xl:block w-full max-w-[2150px] left-1/2 -translate-x-1/2 fixed z-[990] transition-all duration-700 ${
           isScrolled
-            ? "xl:w-[85%]  rounded-[40px] top-10 shadow-full backdrop-blur-[1px] bg-customWhite/90 text-darkBlue"
+            ? "xl:w-[85%]  rounded-[40px] top-5 shadow-full backdrop-blur-[1px] bg-customWhite/90 text-darkBlue"
             : "w-full text-customWhite"
         }`}
       >

@@ -67,36 +67,33 @@ export default function Footer() {
   }, []);
 
   const aboutLinks = [
-    { label: "About Us", src: "/about-us" },
-    { label: "Blogs", src: "/blogs" },
-    { label: "Get In Touch", src: "/contact-us" },
-    { label: "Privacy Policy", src: "/privacy-policy" },
-    { label: "Terms & Conditions", src: "/terms-conditions" },
-    { label: "DGCA Pariksha", href: "https://pariksha.dgca.gov.in/home" },
-    { label: "eGCA Portal", src: "https://www.dgca.gov.in/digigov-portal/jsp/dgca/common/login.jsp" },
-    { label: "Class 1 Medical", src: "https://www.dgca.gov.in/digigov-portal/?page=jsp/dgca/InventoryList/personal/medical/class1/Class1.pdf" },
-    { label: "Class 2 Medical", src: "https://www.dgca.gov.in/digigov-portal/?page=jsp/dgca/InventoryList/personal/medical/class2/Class2.pdf" },
+    { label: "Home", src: "/" },
+    // { label: "About Us", src: "/" },
+    // { label: "Courses", src: "/" },
+    // { label: "Contact Us", src: "/" },
+    // { label: "Privacy Policy", src: "/" },
+
   ];
   const tourPackages = [
     {
       label: "PPL (Ground Training + Flight Training)",
-      src: "/courses/ppl",
+      src: "#courses",
     },
     {
       label: "CPL Ground Training",
-      src: "/courses/cpl-ground-training",
+      src: "#courses",
     },
     {
       label: "CPL Flight Training",
-      src: "/courses/cpl-flight-training",
+      src: "#courses",
     },
     {
       label: "Flight Simulator",
-      src: "/courses/flight-simulato",
+      src: "#courses",
     },
     {
       label: "Airline preparation",
-      src: "/courses/airline-preparation",
+      src: "#courses",
     },
   ];
 
@@ -219,9 +216,8 @@ export default function Footer() {
         /> */}
 
       <div
-        className={`  border-t border-dotted  border-gray-400 bg-gray-800  flex  flex-row   flex-wrap  items-start  py-14  lg:py-12 ${
-          isVisible ? "w-[100%]" : "w-20"
-        } `}
+        className={`  border-t border-dotted  border-gray-400 bg-gray-800  flex  flex-row   flex-wrap  items-start  py-14  lg:py-12 ${isVisible ? "w-[100%]" : "w-20"
+          } `}
       >
         <div className=" w-[70%]  lg:w-1/4  group">
           <ScrollAnimationRight>
@@ -233,9 +229,8 @@ export default function Footer() {
               {contactDetails.map((item: any, index: any) => (
                 <div
                   key={index}
-                  className={`text-sm  flex items-start  gap-1 ${
-                    index === 0 ? "mt-3" : ""
-                  }`}
+                  className={`text-sm  flex items-start  gap-1 ${index === 0 ? "mt-3" : ""
+                    }`}
                 >
                   <p className="flex items-center text-nowrap gap-1">
                     {item?.icon} {item?.label} :
@@ -292,7 +287,7 @@ export default function Footer() {
             <div className="mt-3 flex-col flex space-y-2 text-sm">
               {tourPackages.map((item: any, index: any) => (
                 <Link
-                  href={item?.src }
+                  href={item?.src}
                   key={index}
                   className="hover:scale-105 cursor-pointer transition-all duration-500 hover:text-lightBrown"
                 >
@@ -315,9 +310,8 @@ export default function Footer() {
       </div>
 
       <p
-        className={`border-b border-dotted mx-auto border-gray-400 mb-5 transition-all duration-1000 ${
-          isVisible ? "w-[100%]" : "w-20"
-        }`}
+        className={`border-b border-dotted mx-auto border-gray-400 mb-5 transition-all duration-1000 ${isVisible ? "w-[100%]" : "w-20"
+          }`}
       ></p>
 
       <div className="w-[90%]   md:w-full text-center text-xs py-8   ">

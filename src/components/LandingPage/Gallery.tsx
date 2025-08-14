@@ -21,6 +21,7 @@ import img12 from "../../../public/gallery/OurGallery12.png";
 import MainHeading from "@/components/Common/MainHeading";
 import ScrollAnimationLeft from "@/components/Common/ScrollAnimationLeft";
 import ScrollAnimationYAxis from "@/components/Common/ScrollAnimationYAxis";
+import { FaCheckCircle } from "react-icons/fa";
 
 const images = [
     // img2.src,
@@ -40,23 +41,38 @@ const images = [
 const Gallery = () => {
     const [open, setOpen] = useState(false);
     const [index, setIndex] = useState(0);
+    const features = [
+        "DGCA-Approved Programs",
+        "Airline-Experienced Instructors",
+        "State-of-the-Art Flight Simulator",
+        "Industry-Aligned Curriculum",
+        "1-on-1 Pilot Mentorship",
+    ];
     return (
         <div className="py-10 md:py-16 lg:py-20 px-5 md:px-10 xl:px-32  mx-auto">
-            <div className="text-center max-w-2xl mx-auto ">
+            <div className="text-center max-w-3xl mx-auto  ">
                 <ScrollAnimationYAxis>
-                    <p className="space-x-2">
-                        <span className="text-lg text-lightBrown md:text-xl font-semibold space-x-1">
+                    <p className="space-x-2 ">
+                        <span className="text-xl text-lightBrown md:text-3xl font-semibold space-x-1">
                             India’s Most Trusted Pilot
                         </span>
-                        <span className="text-lg text-black md:text-xl font-semibold space-x-1">
+                        <span className="text-xl text-black md:text-3xl font-semibold space-x-1">
                             Training Institute  Facility
                         </span>
                     </p>
-                    <MainHeading
-                        // title=" "
-                        color={"text-black"}
-                        subtitle=" Discover our training infrastructure and pilot-friendly spaces."
-                    />
+                    <p className="text-gray-600 text-lg leading-relaxed py-2">
+                        At <span className="font-semibold">PilotsPathway</span>, we turn aspiring pilots into aviation leaders.
+                        Train with airline-experienced captains through DGCA-approved programs, using our
+                        state-of-the-art flight simulator and an industry-focused curriculum built for global aviation standards.
+                    </p>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-6  md:text-left">
+                        {features.map((feature, i) => (
+                            <div key={i} className="flex items-center gap-3">
+                                <FaCheckCircle className="text-lightBrown text-xl flex-shrink-0" />
+                                <span className="text-gray-700 font-medium">{feature}</span>
+                            </div>
+                        ))}
+                    </div>
                 </ScrollAnimationYAxis>
             </div>
 

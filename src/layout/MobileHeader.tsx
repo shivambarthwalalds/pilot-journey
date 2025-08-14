@@ -37,7 +37,7 @@ export default function MobileHeader({
         className={`xl:hidden block   fixed z-[990] px-5 
    ${
      isScrolled
-       ? " text-darkBlue  rounded-[40px] left-3 top-11  backdrop-blur-[1px] bg-customWhite/90 h-20  w-[95%]  "
+       ? " text-darkBlue  rounded-[40px] left-3 top-5  backdrop-blur-[1px] bg-customWhite/90 h-20  w-[95%]  "
        : " text-customWhite w-full"
    }
     `}
