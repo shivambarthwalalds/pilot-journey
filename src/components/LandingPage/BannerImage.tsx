@@ -19,7 +19,7 @@ const BannerImage = () => {
             <div className="absolute inset-0 flex flex-col md:flex-row justify-evenly items-center p-4 md:p-0">
                 <div className="flex flex-col ite md:items-start gap-6  md:w-[60%] pt-24 md:pt-0">
 
-                    <div className=" md:mt-2 space-y-3">
+                    <div className=" md:mt-2 space-y-3 px-4 md:px-0">
                         <ScrollAnimationYAxis>
                             <h1 className="text-2xl lg:text-5xl font-semibold capitalize text-center md:text-left tracking-wide lg:leading-15 text-customWhite">
                                 Up to ₹15 Lakh Scholarship for Top Performing Students

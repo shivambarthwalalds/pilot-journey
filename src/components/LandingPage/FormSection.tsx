@@ -61,7 +61,7 @@ export default function FormSection() {
                                         type="text"
                                         name="fullName"
                                         placeholder="Full Name"
-                                        className="w-full md:bg-white/10 backdrop-blur-sm border border-black/50 rounded-xl px-5 py-4 text-black placeholder-slate-500  focus:outline-none focus:ring-2 focus:ring-amber-400/50 focus:border-lightBrown transition-all duration-300 hover:bg-white/15"
+                                        className="w-full md:bg-white/10 backdrop-blur-sm border border-black/50 rounded-xl px-4 py-2 text-black placeholder-slate-500  focus:outline-none focus:ring-2 focus:ring-amber-400/50 focus:border-lightBrown transition-all duration-300 hover:bg-white/15"
                                     />
                                     <ErrorMessage
                                         name="fullName"
@@ -75,7 +75,7 @@ export default function FormSection() {
                                         type="email"
                                         name="email"
                                         placeholder="Email ID"
-                                        className="w-full md:bg-white/10 backdrop-blur-sm border border-black/50 rounded-xl px-5 py-4 text-black placeholder-slate-500  focus:outline-none focus:ring-2 focus:ring-amber-400/50 focus:border-amber-400/50 transition-all duration-300 hover:bg-white/15"
+                                        className="w-full md:bg-white/10 backdrop-blur-sm border border-black/50 rounded-xl px-4 py-2 text-black placeholder-slate-500  focus:outline-none focus:ring-2 focus:ring-amber-400/50 focus:border-amber-400/50 transition-all duration-300 hover:bg-white/15"
                                     />
                                     <ErrorMessage
                                         name="email"
@@ -89,7 +89,7 @@ export default function FormSection() {
                                         type="text"
                                         name="mobile"
                                         placeholder="Mobile Number"
-                                        className="w-full md:bg-white/10 backdrop-blur-sm border border-black/50 rounded-xl px-5 py-4 text-black placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-400/50 focus:border-amber-400/50 transition-all duration-300 hover:bg-white/15"
+                                        className="w-full md:bg-white/10 backdrop-blur-sm border border-black/50 rounded-xl px-4 py-2 text-black placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-400/50 focus:border-amber-400/50 transition-all duration-300 hover:bg-white/15"
                                     />
                                     <ErrorMessage
                                         name="mobile"
@@ -103,7 +103,7 @@ export default function FormSection() {
                                         type="text"
                                         name="city"
                                         placeholder="City"
-                                        className="w-full md:bg-white/10 backdrop-blur-sm border border-black/50 rounded-xl px-5 py-4 text-black placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-400/50 focus:border-amber-400/50 transition-all duration-300 hover:bg-white/15"
+                                        className="w-full md:bg-white/10 backdrop-blur-sm border border-black/50 rounded-xl px-4 py-2 text-black placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-400/50 focus:border-amber-400/50 transition-all duration-300 hover:bg-white/15"
                                     />
                                     <ErrorMessage
                                         name="city"
@@ -117,7 +117,7 @@ export default function FormSection() {
                                         type="number"
                                         name="age"
                                         placeholder="Age"
-                                        className="w-full md:bg-white/10 backdrop-blur-sm border border-black/50 rounded-xl px-5 py-4 text-black placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-400/50 focus:border-amber-400/50 transition-all duration-300 hover:bg-white/15"
+                                        className="w-full md:bg-white/10 backdrop-blur-sm border border-black/50 rounded-xl px-4 py-2 text-black placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-400/50 focus:border-amber-400/50 transition-all duration-300 hover:bg-white/15"
                                     />
                                     <ErrorMessage
                                         name="age"

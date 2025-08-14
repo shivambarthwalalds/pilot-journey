@@ -36,11 +36,10 @@ function Header() {
     <>
       <div
         id="header"
-        className={`hidden xl:block w-full max-w-[2150px] left-1/2 -translate-x-1/2 fixed z-[990] transition-all duration-700 ${
-          isScrolled
-            ? "xl:w-[85%]  rounded-[40px] top-5 shadow-full backdrop-blur-[1px] bg-customWhite/90 text-darkBlue"
-            : "w-full text-customWhite"
-        }`}
+        className={`hidden xl:block w-full max-w-[2150px] left-1/2 -translate-x-1/2 fixed z-[990] transition-all duration-700 ${isScrolled
+          ? "  xl:w-[85%] xl:hidden rounded-[40px] top-5 shadow-full backdrop-blur-[1px] bg-customWhite/90 text-darkBlue"
+          : "w-full  text-customWhite"
+          }`}
       >
         <div className="px-10 pt-2">
           <div className="flex items-center justify-between  w-full ">
@@ -58,7 +57,7 @@ function Header() {
             </div>
             <div className="flex items-center gap-6 xl:gap-4">
               <nav className="flex gap-8 p-4">
-                {menuItems.map((item: any, index: number) => (
+                {/* {menuItems.map((item: any, index: number) => (
                   <div key={index} className="relative py-2">
                     <Link
                       href={item?.url}
@@ -80,7 +79,7 @@ function Header() {
                       {item?.label} {item?.icon}
                     </Link>
                   </div>
-                ))}
+                ))} */}
               </nav>
               {/* <div className="text-white">
                 <Button
